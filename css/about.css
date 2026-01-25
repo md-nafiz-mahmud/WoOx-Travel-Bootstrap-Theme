@@ -272,6 +272,7 @@
 
 .offer-price {
   position: relative;
+  width: 100%;
   min-height: 420px;
   flex-shrink: 0; /* div shrink বন্ধ করতে হবে */
 }
@@ -279,8 +280,7 @@
 .img-havana,
 .img-kingston,
 .img-george-town {
-  /* width: 50%; */
-  width: 59%;
+  width: 51%;
   display: block;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
@@ -293,8 +293,8 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
   top: 50%;
-  /* right: 0; */
-  right: -13%;
+  right: 1%;
+  width: 79%;
   transform: translateY(-50%);
 }
 
@@ -537,11 +537,14 @@
   gap: 2rem;
   overflow-x: auto;
   white-space: nowrap;
+
+  /* temp */
+  padding: 0 8px;
 }
 
 .location-view {
   position: relative;
-  width: 70%;
+  width: 75%;
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);

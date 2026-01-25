@@ -1,3 +1,8 @@
+body:not(.light) {
+  background: #232223;
+  color: #fff;
+}
+
 /* color Top*/
 
 :root {
@@ -461,85 +466,4 @@
   height: 550px;
   border: none;
   border-radius: 23px;
-}
-
-/* ////////////////////////////////////// */
-/* MORE BANNER SECTION */
-/* ////////////////////////////////////// */
-
-.contact-section {
-  margin-top: 120px;
-  width: 100%;
-  /* padding: 0 12px; */
-}
-
-.contact-container {
-  width: 100%;
-  background: url(/images/cta-bg.jpg);
-  background-size: cover;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;
-  padding: 75px 12px;
-}
-
-.cta-header {
-  font-size: 40px;
-  color: var(--white-color);
-  text-transform: uppercase;
-  line-height: 48px;
-  margin-bottom: 10px;
-}
-
-.cta-text {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: var(--white-color);
-}
-
-.cta-link:link,
-.cta-link:visited {
-  font-size: 14px;
-  background: transparent;
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-  padding: 12px 30px;
-  border-radius: 25px;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.3s;
-}
-
-.cta-link:hover,
-.cta-link:active {
-}
-
-.footer-section {
-  width: 100%;
-  background: var(--primery-color);
-  padding: 25px 0px;
-}
-.footer-container {
-  text-align: center;
-  padding: 0 12px;
-}
-
-.footer-text {
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
-  color: var(--white-color);
-}
-
-.footer-text a {
-  color: var(--white-color);
-  font-weight: 500;
-  font-size: 1rem;
 }

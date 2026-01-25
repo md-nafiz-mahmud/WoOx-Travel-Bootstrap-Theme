@@ -1,39 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  position: relative;
-  background: #fff;
-  font-family: "poppins", sans-serif;
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-  position: relative;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
 /* color Top*/
 
 :root {
@@ -189,10 +153,14 @@ h6 {
   padding: 60px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
+
 .town-header {
   display: flex;
   position: relative;
+
+  overflow: hidden;
 }
+
 .town-titel {
   color: var(--ass-black-color);
   font-size: 30px;
@@ -204,6 +172,7 @@ h6 {
 .town-titel span {
   color: var(--primery-color);
 }
+
 .town-button {
   display: flex;
   flex-direction: row;
@@ -218,16 +187,20 @@ h6 {
   background: none;
   color: var(--text-color);
 }
+
 .twon-picture {
   display: flex;
+  gap: 2rem;
   width: 100%;
-  overflow: hidden;
+  /* flex-direction: column; */
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .twon-picture .town-container-1:nth-child(2),
 .twon-picture .town-container-1:nth-child(3),
 .twon-picture .town-container-1:nth-child(4) {
-  display: none;
+  /* display: none; */
 }
 
 .town-container-1 {
@@ -236,7 +209,10 @@ h6 {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
+
+  flex-shrink: 0; /* shrink বন্ধ */
 }
+
 .town-container-1 img {
   width: 100%;
   display: block;
@@ -283,18 +259,28 @@ h6 {
 
 .offer-price-container .offer-price:nth-child(2),
 .offer-price-container .offer-price:nth-child(3) {
-  display: none;
+  /* display: none; */
+}
+
+/* div – ONLY this will scroll */
+.offer-price-container {
+  display: flex;
+  gap: 4rem;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .offer-price {
   position: relative;
   min-height: 420px;
+  flex-shrink: 0; /* div shrink বন্ধ করতে হবে */
 }
 
 .img-havana,
 .img-kingston,
 .img-george-town {
-  width: 50%;
+  /* width: 50%; */
+  width: 59%;
   display: block;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
@@ -307,7 +293,8 @@ h6 {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
   top: 50%;
-  right: 0;
+  /* right: 0; */
+  right: -13%;
   transform: translateY(-50%);
 }
 
@@ -317,6 +304,7 @@ h6 {
   align-items: center;
   gap: 1.6rem;
 }
+
 .titel-info {
   display: flex;
   align-items: center;
@@ -401,6 +389,8 @@ h6 {
   margin-top: 30px;
 }
 
+.deals-link:link,
+.deals-link:visited,
 .ture-link:link,
 .ture-link:visited,
 .cta-main-button a:link,
@@ -527,9 +517,99 @@ h6 {
 
 .best-location-container {
   padding: 0 12px;
+  width: 100%;
+  /* overflow-y: hidden;
+  overflow-x: auto; */
+}
+
+.overflow {
+  overflow: hidden; /* text div – NO overflow */
 }
 
 .best-location-title,
 .location-text {
+  text-align: center;
+}
+
+/* This div – ONLY this will scroll */
+.location-option {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.location-view {
+  position: relative;
+  width: 70%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.location-text {
+  margin-bottom: 80px;
+}
+
+.backgroud-location-view-1,
+.backgroud-location-view-2,
+.backgroud-location-view-3,
+.backgroud-location-view-4,
+.backgroud-location-view-5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1.5rem;
+}
+
+.backgroud-location-view-1 {
+  background-image: url(../images/best-01.jpg);
+}
+.backgroud-location-view-2 {
+  background-image: url(../images/best-02.jpg);
+}
+.backgroud-location-view-3 {
+  background-image: url(../images/best-03.jpg);
+}
+.backgroud-location-view-4 {
+  background-image: url(../images/best-04.jpg);
+}
+.backgroud-location-view-5 {
+  background-image: url(../images/best-05.jpg);
+}
+
+.bi-bookmark-heart {
+  margin-left: 1rem;
+  /* margin-top: 0.4rem; */
+  color: var(--primery-color);
+  width: 20px;
+  height: 20px;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.location-title h5 {
+  font-size: 20px;
+  color: var(--primery-color);
+}
+
+.location-title p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.external-button {
+  margin-top: 60px;
+  margin-bottom: 0;
   text-align: center;
 }

@@ -27,6 +27,12 @@
   position: relative;
 }
 
+.reservation-more-link:link,
+.reservation-more-link:visited {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
 /* ////////////////////////////////////// */
 /* ACTION SECTION */
 /* ////////////////////////////////////// */
@@ -58,7 +64,7 @@
   display: inline-block;
   padding: 1.125rem;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .bi-geo-alt-fill,
@@ -157,7 +163,8 @@
   height: 2.875rem;
   background: transparent;
   font-family: inherit;
-  color: inherit;
+  color: #707070;
+  font-size: inherit;
   border: 1px solid var(--cta-border-color);
   border-radius: 23px;
   margin-bottom: 1.875rem;
@@ -167,14 +174,6 @@
 
 .cta-form button {
   margin-bottom: 0px;
-}
-
-.cta-form + button:focus,
-select:focus,
-input:focus,
-.select-where:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.4rem rgba(13, 197, 253, 0.25);
 }
 
 .cta-form button {

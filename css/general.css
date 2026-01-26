@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.4rem rgba(13, 197, 253, 0.25);
+}
+
 html,
 body {
   position: relative;
@@ -220,11 +225,6 @@ h6 {
   position: relative;
 }
 
-.reservation-more-link:link,
-.reservation-more-link:visited {
-  font-size: 14px;
-}
-
 /* ////////////////////////////////////// */
 /* CONTACT SECTION */
 /* ////////////////////////////////////// */
@@ -280,6 +280,8 @@ h6 {
 
 .cta-link:hover,
 .cta-link:active {
+  background: var(--white-color);
+  color: var(--primery-color);
 }
 
 /* ////////////////////////////////////// */

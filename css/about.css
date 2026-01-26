@@ -307,6 +307,7 @@
   border: 1px solid var(--primery-color);
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* ////////////////////////////////////// */

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/quary.css" />
 
-    <title>WoOx Travel Bootstrap Theme</title>
+    <title>WoOx Travel Reservation Page</title>
   </head>
   <body>
     <header class="about-header-section">
@@ -134,7 +134,74 @@
         </div>
       </section>
 
-      <section class="cta-action-section"></section>
+      <section class="cta-action-section">
+        <div class="cta-action-container">
+          <div class="live-map-location">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth"
+            >
+            </iframe>
+          </div>
+          <div class="cta-box">
+            <h4 class="cta-title">
+              Make Your <span>Reservation</span> Through This <span>Form</span>
+            </h4>
+            <form class="cta-form">
+              <div>
+                <label for="name" class="name">your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="John Smithee"
+                  required
+                />
+              </div>
+              <div>
+                <label for="name" class="name">your phone number</label>
+                <input
+                  id="number"
+                  name="number"
+                  type="number"
+                  placeholder="Your Number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="name" class="name">number of guests</label>
+                <select class="guests" id="choose-item" name="guests" required>
+                  <option value="">Please choose one option</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4 +">4 +</option>
+                </select>
+              </div>
+              <div>
+                <label for="name" class="name">your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ex. John Smithee"
+                  required
+                />
+              </div>
+              <div>
+                <label for="name" class="name">your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ex. John Smithee"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-section">

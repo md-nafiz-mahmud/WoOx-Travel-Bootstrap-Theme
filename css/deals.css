@@ -154,6 +154,8 @@
 .best-deals {
 }
 .deals-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .deals-item-container {
@@ -169,11 +171,13 @@
   color: var(--primery-color);
   margin-bottom: 20px;
 }
+
 .deals-item-header {
   font-size: 1.25rem;
   color: var(--ass-black-color);
   padding-bottom: 25px;
 }
+
 .deals-limit {
   border-top: 1px solid #ddd;
   padding: 10px 0px;

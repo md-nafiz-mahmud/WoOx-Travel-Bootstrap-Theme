@@ -14,6 +14,9 @@ body:not(.light) {
   --text-champagne-color: #f6eac5;
   --border-color: #eee;
   --france-link-color: #0a58ca;
+  --as-backgroud-color: #f7f7f7;
+  --icon-backgroud-color: #f0f0f0;
+  --cta-border-color: #e0e0e0;
 }
 
 /* ////////////////////////////////////// */

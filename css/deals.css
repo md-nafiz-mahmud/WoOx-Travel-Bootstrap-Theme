@@ -86,7 +86,7 @@
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
   margin-bottom: 1.875rem;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
@@ -216,4 +216,8 @@
 .best-deals-link:link,
 .best-deals-link:visited {
   margin-bottom: 0.5rem;
+}
+
+.deals-item-container div:last-child {
+  text-align: center;
 }

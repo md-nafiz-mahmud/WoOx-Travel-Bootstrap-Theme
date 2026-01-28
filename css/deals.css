@@ -58,18 +58,104 @@
 /* ////////////////////////////////////// */
 
 .form-section {
-  padding: 0 12px;
+  padding: 0 0.75rem;
 }
+
 .form-container {
   background: var(--primery-color);
   border-bottom-left-radius: 23px;
   border-bottom-right-radius: 23px;
   padding: 35px 60px;
 }
+
 .form-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--white-color);
   margin: 7px 0px 13px 0px;
 }
+
 .main-form {
+}
+
+.location-select,
+.price-select {
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+  margin-bottom: 1.875rem;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  background: var(--primery-color);
+}
+
+.price-select {
+}
+
+.location-price-submit {
+  font-size: 0.875rem;
+  display: inline-block;
+  width: 100%;
+  background: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  font-weight: 600;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1.875rem;
+  border-radius: 25px;
+  line-height: 23px;
+}
+
+.location-price-submit:hover {
+  color: var(--primery-color);
+  background: var(--white-color);
+}
+
+/* ////////////////////////////////////// */
+/* BEST DEALS SECTION */
+/* ////////////////////////////////////// */
+
+.best-deals-section {
+  margin-top: 7.5rem;
+}
+.best-deals-container {
+  padding: 0 0.75rem;
+}
+.best-deals-title {
+  margin-bottom: 1.25rem;
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--ass-black-color);
+}
+.best-deals-text {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.875rem;
+  color: var(--text-color);
+  margin-bottom: 5rem;
+}
+.deals-img-1 {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+}
+.best-deals {
+}
+.deals-item {
+}
+.deals-sub-title {
+  padding: 30px;
+}
+.deals-title {
+}
+.deals-limit {
 }

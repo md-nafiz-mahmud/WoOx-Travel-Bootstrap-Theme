@@ -301,6 +301,7 @@
 .offer-scroll-button svg {
   width: 36px;
   height: 36px;
+  transform: translate(0px, 1px);
 }
 
 /* ////////////////////////////////////// */

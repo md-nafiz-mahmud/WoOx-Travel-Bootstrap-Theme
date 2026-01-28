@@ -51,6 +51,7 @@
 .deals-link a:visited {
   color: var(--white-color);
   margin-bottom: 5px;
+  border: 1px solid var(--white-color);
 }
 
 /* ////////////////////////////////////// */
@@ -216,6 +217,16 @@
 .best-deals-link:link,
 .best-deals-link:visited {
   margin-bottom: 0.5rem;
+  background: var(--primery-color);
+  color: var(--white-color);
+  border: 1px solid var(--primery-color);
+}
+
+.best-deals-link:hover,
+.best-deals-link:active {
+  background: var(--white-color);
+  color: var(--primery-color);
+  border: 1px solid var(--white-color);
 }
 
 .deals-item-container div:last-child {

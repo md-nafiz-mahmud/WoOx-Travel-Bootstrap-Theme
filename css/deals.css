@@ -159,6 +159,10 @@
   flex-direction: column;
 }
 
+.best-deals deals-item:nth-child(4) {
+  margin-bottom: 30px;
+}
+
 .deals-item-container {
   padding: 30px;
   background: var(--as-backgroud-color);

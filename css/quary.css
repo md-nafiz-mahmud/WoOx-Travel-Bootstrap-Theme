@@ -282,7 +282,7 @@
   }
 
   .cities-town-section {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .offer-container {
@@ -307,8 +307,13 @@
     height: 100%;
   }
 
+  .town-container-1 {
+    width: 47.5%;
+    height: 47.5%;
+  }
+
   .town-container-1 img {
-    width: 50%;
+    width: 100%;
     border-radius: 1rem;
   }
 
@@ -327,7 +332,7 @@
   }
 
   .location-view {
-    width: 60%;
+    width: 47.5%;
   }
 
   .form-section {

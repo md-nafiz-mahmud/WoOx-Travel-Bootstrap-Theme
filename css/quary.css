@@ -96,6 +96,11 @@
     gap: 1.5rem;
   }
 
+  .country-introduct {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .live-location {
     padding: 0 4rem;
   }
